@@ -1,4 +1,4 @@
-# # Medical Image Classification using Deep Learning
+# Medical Image Classification using Deep Learning
 ## Chest X-Ray Pneumonia Detection
 
 This project implements a Deep Learning-based Medical Image Classification system for detecting Pneumonia from Chest X-Ray images using Convolutional Neural Networks (CNNs) in PyTorch.
@@ -70,6 +70,7 @@ The following preprocessing techniques were applied:
 # CNN Architectures
 
 ## 1. Baseline CNN
+
 A simple CNN model consisting of:
 - Convolutional layers
 - ReLU activations
@@ -77,6 +78,7 @@ A simple CNN model consisting of:
 - Fully connected layers
 
 ## 2. Improved CNN
+
 An enhanced CNN model including:
 - Batch Normalization
 - Dropout
@@ -99,15 +101,15 @@ Several techniques were used to reduce overfitting:
 
 ---
 
-# Results
+# Final Results Comparison
 
-## Final Test Results
-
-| Model | Accuracy | Loss |
+| Model | Best Validation Accuracy | Best Validation Loss |
 |---|---|---|
-| Improved CNN | 79.97% | 0.4800 |
+| Baseline CNN | 95.89% | 0.1071 |
+| Improved CNN | 95.13% | 0.1319 |
 
 ---
+
 # Results Visualizations
 
 Training and validation curves are included inside the `results` folder of the repository.
@@ -117,9 +119,11 @@ The repository contains:
 - Loss curves
 - Training performance visualizations
 
+---
+
 # Observations
 
-- The improved CNN achieved stable learning behavior.
+- The improved CNN achieved more stable learning behavior.
 - Overfitting was significantly reduced after applying regularization techniques and improving dataset splitting.
 - Training and validation curves became more consistent and smooth.
 
@@ -137,3 +141,49 @@ Medical-Image-Classification-DL/
 ├── results/
 │   ├── accuracy_curve.png
 │   └── loss_curve.png
+```
+
+---
+
+# Installation
+
+Install required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# How to Run
+
+1. Open the notebook in Google Colab or Jupyter Notebook.
+2. Configure Kaggle API token.
+3. Run all notebook cells sequentially.
+4. The dataset will automatically download using KaggleHub.
+5. Train and evaluate the CNN models.
+
+---
+
+# Requirements
+
+```text
+torch
+torchvision
+numpy
+matplotlib
+kagglehub
+```
+
+---
+
+# Notes
+
+The dataset is automatically downloaded using KaggleHub during notebook execution.
+
+---
+
+# Author
+Youssef Ehab ElKalla 
+Deep Learning Course Project  
+Medical Image Classification using CNNs
