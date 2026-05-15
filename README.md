@@ -185,5 +185,3 @@ The dataset is automatically downloaded using KaggleHub during notebook executio
 
 # Author
 Youssef Ehab ElKalla 
-Deep Learning Course Project  
-Medical Image Classification using CNNs
